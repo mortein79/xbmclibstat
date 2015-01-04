@@ -8,7 +8,7 @@ from xbmcjson import XBMC
 warnings.filterwarnings("ignore", category=UserWarning, module='urllib')
 
 
-class XBMLLibStat:
+class XBMCLibStat:
     def __init__(self):
         configdata = self.readConfig()
         self.client = XBMC(configdata['host'], configdata['user'], configdata['password'])
@@ -93,7 +93,7 @@ class XBMLLibStat:
 
 def main():
     try:
-        p = XBMLLibStat()
+        p = XBMCLibStat()
         p.drawMessage()
         return 0
     except Exception as err:
