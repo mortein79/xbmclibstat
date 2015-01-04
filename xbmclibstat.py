@@ -10,6 +10,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module='urllib')
 
 class XBMCLibStat:
     def __init__(self):
+    
         configdata = self.readConfig()
         self.client = XBMC(configdata['host'], configdata['user'], configdata['password'])
 
