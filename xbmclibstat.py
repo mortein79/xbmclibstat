@@ -4,6 +4,7 @@ import sys, os, warnings, configparser
 
 from xbmcjson import XBMC
 
+# some hack, sorry...
 warnings.filterwarnings("ignore", category=UserWarning, module='urllib')
 
 
